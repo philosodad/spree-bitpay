@@ -57,7 +57,7 @@ module Spree
 			end
 		end
 
-		redirect_to edit_order_checkout_url(order, state: 'payment'), :notice => Spree.t(:checkout_cancelled)
+		redirect_to edit_order_url(order, state: 'payment'), :notice => Spree.t(:checkout_cancelled)
 
 	end
 
