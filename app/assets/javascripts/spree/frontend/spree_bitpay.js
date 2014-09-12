@@ -1,9 +1,10 @@
 // BitPay Payment Methods
 var Bitpay = {
 
-  checkout: function(e) {
+  checkout: function(e, data, status, xhr) {
     e.preventDefault();
-    $('#bitpay_invoice_iframe').attr("src", Bitpay.invoiceUrl);
+    var invoiceUrl = $.ajax({url: Bitpay.invoiceUrl, async: false}).responseText
+    $('#bitpay_invoice_iframe').attr("src", invoiceUrl);
     $('#bitpay_checkout_modal').trigger('openModal');
   
     return false;
@@ -13,7 +14,6 @@ var Bitpay = {
     
     // Limit to messages from apiEndpoint
     if (Bitpay.apiEndpoint && Bitpay.apiEndpoint.lastIndexOf(message.origin, 0) == 0) {
-      
       switch(message.data.status) {
         case "new":
           break;
