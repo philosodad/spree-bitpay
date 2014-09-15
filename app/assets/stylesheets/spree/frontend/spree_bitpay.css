@@ -1,10 +1,10 @@
+/* 
+ *= require spree/frontend
+*/
 // Bitpay Payment Method styling
 
 // No idea why this element is needed but it seems the first entry is ignored??
 // TODO: Is this really needed?
-/* 
- *= require spree/frontend
-*/
 
 #throwaway {
 	width: 20px;

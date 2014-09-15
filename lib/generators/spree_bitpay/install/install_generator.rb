@@ -14,7 +14,9 @@ module SpreeBitpay
 
         if File.exist?(backend_css_file) && File.exist?(frontend_css_file)
           inject_into_file frontend_css_file, " *= require spree/frontend/spree_bitpay\n", :before => /\*\//, :verbose => true
+          inject_into_file frontend_css_file, " *= require spree/frontend\n", :before => /\*\//, :verbose => true
           inject_into_file backend_css_file, " *= require spree/backend/spree_bitpay\n", :before => /\*\//, :verbose => true
+          inject_into_file backend_css_file, " *= require spree/backend\n", :before => /\*\//, :verbose => true
         end
       end
 
