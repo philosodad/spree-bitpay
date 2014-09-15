@@ -1,7 +1,7 @@
 # encoding: UTF-8
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
-  s.name        = 'spree-bitpay'
+  s.name        = 'spree_bitpay'
   s.version     = '2.2.2'
   s.summary     = 'Add gem summary here'
   s.description = 'Add (optional) gem description here'
