@@ -51,4 +51,3 @@ window.addEventListener('message', Bitpay.finishCheckout, false);
 
 <% end %>
 
-

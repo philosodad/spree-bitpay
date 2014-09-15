@@ -1,5 +1,4 @@
-// BitPay Payment Methods
-//= require spree/frontend
+//= require spree/frontend 
 
 var Bitpay = {
 

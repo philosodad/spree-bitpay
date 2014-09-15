@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'spree', '2.2.2'
-gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-2-stable'
-gem 'bitpay-client', '>=0.1.3'
-gem 'pry'
-# Specify your gem's dependencies in spree_bitpay.gemspec
+gem 'sprockets', '~> 2.11.0'
+gem 'spree', github: 'spree/spree', branch: '2-2-stable'
+# Provides basic authentication functionality for testing parts of your engine
+gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '2-2-stable'
+
 gemspec
