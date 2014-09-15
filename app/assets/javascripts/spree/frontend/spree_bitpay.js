@@ -1,4 +1,6 @@
 // BitPay Payment Methods
+//= require spree/frontend
+
 var Bitpay = {
 
   checkout: function(e, data, status, xhr) {
