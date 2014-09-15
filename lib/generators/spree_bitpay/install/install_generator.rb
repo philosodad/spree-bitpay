@@ -21,7 +21,7 @@ module SpreeBitpay
       end
 
       def add_migrations
-        run 'bundle exec rake railties:install:migrations'  #FROM=spree_bitpay
+        run 'bundle exec rake railties:install:migrations  FROM=spree_bitpay'
       end
 
       def run_migrations
